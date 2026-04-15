@@ -47,7 +47,7 @@ export const SocketContextProvider = ({ children }) => {
   return (
     <SocketContext.Provider
       value={{
-        socket: socketRef,
+        socket: socketRef.current,
         onlineUsers,
       }}
     >
