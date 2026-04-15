@@ -24,7 +24,7 @@ export const SocketContextProvider = ({ children }) => {
     }
 
     if (!socketRef.current) {
-      const socket = io("http://localhost:5000", {
+      const socket = io("https://chat-app-xclo.onrender.com/", {
         query: {
           user_id: authUser._id,
         },
